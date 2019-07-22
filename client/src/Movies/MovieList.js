@@ -31,7 +31,10 @@ const MovieList = props => {
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
   return (
-    <Link to={"/movies/".concat(movie.id)}>
+    <Link
+      to={"/movies/".concat(movie.id)}
+      style={{ "text-decoration": "none", "color": "black" }}
+    >
       <div className="movie-card">
         <h2>{title}</h2>
         <div className="movie-director">
