@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Movie = ({ match }) => {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const id = match.params.id;
@@ -18,7 +18,7 @@ const Movie = ({ match }) => {
         console.error(error);
       });
 
-  }, [movie]);
+  }, [match]);
 
   // Uncomment this only when you have moved on to the stretch goals
   // const saveMovie = () => {
