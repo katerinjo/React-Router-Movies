@@ -21,6 +21,13 @@ body {
   font-size: 0.8rem;
 }
 
+.movie-list {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .saved-list {
   background-color: #fff;
   border: 0;
@@ -69,4 +76,8 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+}
+
+Label {
+  margin: auto;
 }
