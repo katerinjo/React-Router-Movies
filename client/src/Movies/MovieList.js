@@ -29,7 +29,7 @@ const MovieList = props => {
 }
 
 function MovieDetails({ movie }) {
-  const { title, director, metascore, stars } = movie;
+  const { title } = movie;
   return (
     <Link
       to={"/movies/".concat(movie.id)}
