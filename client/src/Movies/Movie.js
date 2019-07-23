@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Movie = ({ id }) => {
+const Movie = ({ id, addFun }) => {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const Movie = ({ id }) => {
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
+      <div className="save-button" onClick={() => addFun(movie)}>Save</div>
     </div>
   );
 }
